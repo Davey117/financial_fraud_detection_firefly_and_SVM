@@ -83,8 +83,8 @@ def inject_custom_css():
         
         /* Metric block styling */
         div[data-testid="stMetric"] {
-            background-color: #f8f9fa;
-            border: 1px solid #e9ecef;
+            background-color: var(--secondary-background-color);
+            border: 1px solid rgba(128, 128, 128, 0.2);
             padding: 1.2rem;
             border-radius: 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.02);
@@ -93,25 +93,27 @@ def inject_custom_css():
         div[data-testid="stMetric"]:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.06);
-            border-color: #cbd5e0;
+            border-color: var(--primary-color);
         }
         
         /* Sidebar Specifications Box */
         .sidebar-spec {
-            background-color: #f8f9fa;
+            background-color: var(--secondary-background-color);
+            color: var(--text-color);
             padding: 1.2rem;
             border-radius: 10px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid rgba(128, 128, 128, 0.2);
             margin-top: 1.5rem;
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
         }
         .sidebar-spec strong {
-            color: #1a202c;
+            color: var(--text-color);
             display: block;
             margin-bottom: 0.5rem;
         }
         .sidebar-spec code {
-            background-color: #edf2f7;
+            background-color: rgba(128, 128, 128, 0.15);
+            color: var(--primary-color);
             padding: 0.15rem 0.3rem;
             border-radius: 4px;
             font-family: monospace;
